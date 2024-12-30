@@ -15,10 +15,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Product Card 1 -->
             <div class="bg-white shadow rounded-lg overflow-hidden">
-                <div class="bg-yellow-100 text-center p-4">
-                    <p class="text-lg font-bold text-gray-700">Work From Home Combo</p>
+                <div class="bg-yellow-100 text-center">
                     <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Work From Home Combo"
-                        class="w-full h-40 object-cover rounded-md">
+                        class="w-full h-48 object-fill rounded-md">
                 </div>
                 <div class="px-4">
                     <div class="bg-black rounded-[20px] border border-white p-1">
@@ -47,10 +46,9 @@
 
             <!-- Product Card 2 -->
             <div class="bg-white shadow rounded-lg overflow-hidden">
-                <div class="bg-yellow-100 text-center p-4">
-                    <p class="text-lg font-bold text-gray-700">Ultimate Pro Seating Combo</p>
+                <div class="bg-yellow-100 text-center">                
                     <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Ultimate Pro Seating Combo"
-                        class="w-full h-40 object-cover rounded-md">
+                        class="w-full h-48 object-fill rounded-md">
                 </div>
                 <div class="px-4">
                     <div class="bg-black rounded-[20px] border border-white p-1">
@@ -99,16 +97,16 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-black mb-4">Frido Promise</h2>
-                <p class="text-xl text-black font-medium mb-2">Your Trust, Our Priority</p>
-                <p class="text-lg text-gray-700">Experience best of comfort with Frido.</p>
-                <div class="w-24 h-0.5 bg-gray-300 mx-auto mt-8"></div>
+                <p class="text-3xl text-black mb-2">Your Trust, Our Priority</p>
+                <p class="text-3xl text-black">Experience best of comfort with Frido.</p>
+                <div class="w-full h-0.5 bg-gray-300 mx-auto mt-8"></div>
             </div>
 
             <div class="mt-8">
                 <h3 class="text-xl font-semibold text-center mb-8">Awards & Recognitions</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Award 1 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-center p-6 rounded-lg">
                         <div class="h-24 flex items-center justify-center mb-4">
                             <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Amazon Smbhav" class="h-full object-contain">
                         </div>
@@ -116,7 +114,7 @@
                     </div>
 
                     <!-- Award 2 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-center p-6 rounded-lg">
                         <div class="h-24 flex items-center justify-center mb-4">
                             <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Surge" class="h-full object-contain">
                         </div>
@@ -124,7 +122,7 @@
                     </div>
 
                     <!-- Award 3 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-center p-6 rounded-lg">
                         <div class="h-24 flex items-center justify-center mb-4">
                             <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Maharashtra Startup Week" class="h-full object-contain">
                         </div>
