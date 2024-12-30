@@ -63,23 +63,24 @@
         </div>
     </div>
     {{-- post text --}}
-    <div class="bg-yellow-400 py-16 mx-24 mb-6 sm:px-6 lg:px-8 text-center">
-        <!-- Title -->
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">
-            Not sure where to start?
-        </h2>
-
-        <!-- Subtitle -->
-        <p class="text-lg text-gray-600 mb-8">
-            Take the quiz below to find which products are right for you.
-        </p>
-
-        <!-- Quiz Button (Call to Action) -->
-        <a href="/quiz"
-            class="inline-block bg-black text-white text-lg py-3 px-8 rounded-lg shadow-md hover:bg-black-700 transition duration-300">
-            Take the Quiz
-        </a>
+    <div class="bg-yellow-400 py-12 sm:py-16 px-6 md:mx-8 lg:mx-24 mb-6 text-center">
+      <!-- Title -->
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+        Not sure where to start?
+      </h2>
+    
+      <!-- Subtitle -->
+      <p class="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
+        Take the quiz below to find which products are right for you.
+      </p>
+    
+      <!-- Quiz Button (Call to Action) -->
+      <a href="/quiz"
+        class="inline-block bg-black text-white text-base sm:text-lg py-3 px-6 sm:px-8 rounded-lg shadow-md hover:bg-gray-800 transition duration-300">
+        Take the Quiz
+      </a>
     </div>
+    
 
 
     {{-- slider --}}
@@ -91,76 +92,140 @@
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <div class="bg-white border rounded-lg shadow-lg">
-                        <img src="{{ asset('assets/image/Product1') }}" alt="Product 1"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Product Title 1</h3>
-                            <p class="text-gray-600 mt-1">A short description of the product goes here.</p>
-                            <div class="flex items-center justify-between mt-3">
-                                <span class="text-lg font-bold text-gray-900">$99.99</span>
-                                <button
-                                    class="bg-amber-500 text-white py-2 px-4 rounded-lg hover:bg-amber-600 focus:outline-none">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                    </div>
+                     <!-- Product Card 2 -->
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+              <div class="bg-yellow-100 text-center p-4">
+                  <p class="text-lg font-bold text-gray-700">Ultimate Pro Seating Combo</p>
+                  <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Ultimate Pro Seating Combo"
+                      class="w-full h-40 object-cover rounded-md">
+              </div>
+              <div class="px-4">
+                  <div class="bg-black rounded-[20px] border border-white p-1">
+                      <p class="text-sm font-medium text-white text-center">Back and Seat Support</p>
+                  </div>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800 mt-2">Frido Ultimate Pro Seating Combo</h2>
+                  <p class="text-sm text-gray-500 mt-1">Offers enhanced support for better posture and comfort.</p>
+                  <div class="mt-4 flex justify-between items-center">
+                      <p class="text-lg font-bold text-yellow-600">₹2,799.00</p>
+                      <p class="text-sm text-gray-500 line-through">₹8,198.00</p>
+                      <p class="text-sm text-green-600 font-semibold">65% OFF</p>
+                  </div>
+                  <div class="mt-4">
+                      <select class="w-full border border-gray-300 rounded-md p-2">
+                          <option>Select Color/Size</option>
+                      </select>
+                  </div>
+                  <button class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-md font-semibold hover:bg-yellow-600">
+                      ADD TO CART
+                  </button>
+              </div>
+          </div>
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                    <div class="bg-white border rounded-lg shadow-lg">
-                        <img src="{{ asset('assets/image/Product1') }}" alt="Product 2"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Product Title 2</h3>
-                            <p class="text-gray-600 mt-1">A short description of the product goes here.</p>
-                            <div class="flex items-center justify-between mt-3">
-                                <span class="text-lg font-bold text-gray-900">$89.99</span>
-                                <button
-                                    class="bg-amber-500 text-white py-2 px-4 rounded-lg hover:bg-amber-600 focus:outline-none">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Product Card 2 -->
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+              <div class="bg-yellow-100 text-center p-4">
+                  <p class="text-lg font-bold text-gray-700">Ultimate Pro Seating Combo</p>
+                  <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Ultimate Pro Seating Combo"
+                      class="w-full h-40 object-cover rounded-md">
+              </div>
+              <div class="px-4">
+                  <div class="bg-black rounded-[20px] border border-white p-1">
+                      <p class="text-sm font-medium text-white text-center">Back and Seat Support</p>
+                  </div>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800 mt-2">Frido Ultimate Pro Seating Combo</h2>
+                  <p class="text-sm text-gray-500 mt-1">Offers enhanced support for better posture and comfort.</p>
+                  <div class="mt-4 flex justify-between items-center">
+                      <p class="text-lg font-bold text-yellow-600">₹2,799.00</p>
+                      <p class="text-sm text-gray-500 line-through">₹8,198.00</p>
+                      <p class="text-sm text-green-600 font-semibold">65% OFF</p>
+                  </div>
+                  <div class="mt-4">
+                      <select class="w-full border border-gray-300 rounded-md p-2">
+                          <option>Select Color/Size</option>
+                      </select>
+                  </div>
+                  <button class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-md font-semibold hover:bg-yellow-600">
+                      ADD TO CART
+                  </button>
+              </div>
+          </div>
                 </div>
 
 
 
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                    <div class="bg-white border rounded-lg shadow-lg">
-                        <img src="{{ asset('assets/image/Product1') }}" alt="Product 3"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Product Title 3</h3>
-                            <p class="text-gray-600 mt-1">A short description of the product goes here.</p>
-                            <div class="flex items-center justify-between mt-3">
-                                <span class="text-lg font-bold text-gray-900">$79.99</span>
-                                <button
-                                    class="bg-amber-500 text-white py-2 px-4 rounded-lg hover:bg-amber-600 focus:outline-none">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                    </div>
+                       <!-- Product Card 2 -->
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+              <div class="bg-yellow-100 text-center p-4">
+                  <p class="text-lg font-bold text-gray-700">Ultimate Pro Seating Combo</p>
+                  <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Ultimate Pro Seating Combo"
+                      class="w-full h-40 object-cover rounded-md">
+              </div>
+              <div class="px-4">
+                  <div class="bg-black rounded-[20px] border border-white p-1">
+                      <p class="text-sm font-medium text-white text-center">Back and Seat Support</p>
+                  </div>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800 mt-2">Frido Ultimate Pro Seating Combo</h2>
+                  <p class="text-sm text-gray-500 mt-1">Offers enhanced support for better posture and comfort.</p>
+                  <div class="mt-4 flex justify-between items-center">
+                      <p class="text-lg font-bold text-yellow-600">₹2,799.00</p>
+                      <p class="text-sm text-gray-500 line-through">₹8,198.00</p>
+                      <p class="text-sm text-green-600 font-semibold">65% OFF</p>
+                  </div>
+                  <div class="mt-4">
+                      <select class="w-full border border-gray-300 rounded-md p-2">
+                          <option>Select Color/Size</option>
+                      </select>
+                  </div>
+                  <button class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-md font-semibold hover:bg-yellow-600">
+                      ADD TO CART
+                  </button>
+              </div>
+          </div>
                 </div>
 
                 <!-- Slide 4 -->
                 <div class="swiper-slide">
-                    <div class="bg-white border rounded-lg shadow-lg">
-                        <img src="{{ asset('assets/image/Product1') }}" alt="Product 4"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Product Title 4</h3>
-                            <p class="text-gray-600 mt-1">A short description of the product goes here.</p>
-                            <div class="flex items-center justify-between mt-3">
-                                <span class="text-lg font-bold text-gray-900">$69.99</span>
-                                <button
-                                    class="bg-amber-500 text-white py-2 px-4 rounded-lg hover:bg-amber-600 focus:outline-none">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                    </div>
+                      <!-- Product Card 2 -->
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+              <div class="bg-yellow-100 text-center p-4">
+                  <p class="text-lg font-bold text-gray-700">Ultimate Pro Seating Combo</p>
+                  <img src="{{ asset('assets/image/Work_from_Home_ComboSquare.webp') }}" alt="Ultimate Pro Seating Combo"
+                      class="w-full h-40 object-cover rounded-md">
+              </div>
+              <div class="px-4">
+                  <div class="bg-black rounded-[20px] border border-white p-1">
+                      <p class="text-sm font-medium text-white text-center">Back and Seat Support</p>
+                  </div>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-xl font-semibold text-gray-800 mt-2">Frido Ultimate Pro Seating Combo</h2>
+                  <p class="text-sm text-gray-500 mt-1">Offers enhanced support for better posture and comfort.</p>
+                  <div class="mt-4 flex justify-between items-center">
+                      <p class="text-lg font-bold text-yellow-600">₹2,799.00</p>
+                      <p class="text-sm text-gray-500 line-through">₹8,198.00</p>
+                      <p class="text-sm text-green-600 font-semibold">65% OFF</p>
+                  </div>
+                  <div class="mt-4">
+                      <select class="w-full border border-gray-300 rounded-md p-2">
+                          <option>Select Color/Size</option>
+                      </select>
+                  </div>
+                  <button class="mt-4 w-full bg-yellow-500 text-white py-2 rounded-md font-semibold hover:bg-yellow-600">
+                      ADD TO CART
+                  </button>
+              </div>
+          </div>
                 </div>
             </div>
 
@@ -470,7 +535,7 @@
 
     <script>
         const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3, // Show 3 slides at once
+            slidesPerView: 1, // Show 3 slides at once
             spaceBetween: 20, // Space between slides
             loop: true, // Infinite looping
             navigation: {
