@@ -15,4 +15,9 @@ class HomeController extends Controller
     {
         return view('frontend.comobs'); 
     }
+
+    public function inshole()
+    {
+        return view('frontend.inshole');
+    }
 }

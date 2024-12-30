@@ -34,15 +34,30 @@
         <div class="relative group">
           <a href="#" class="text-gray-600 hover:text-gray-800">Categories</a>
           <div class="absolute hidden group-hover:block mt-2 w-48 bg-white shadow-md rounded-lg">
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
-            <div>
-              <img src="" alt="">
-              <p></p>
+            <a href="{{route('inshole')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+            <div class="flex flex-1">
+              <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
+              <p>Shoes Inshole</p>
             </div>
             </a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Category 2</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Category 3</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Category 4</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+              <div class="flex flex-1">
+                <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
+                <p>Shoes Inshole</p>
+              </div>
+            </a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+              <div class="flex flex-1">
+                <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
+                <p>Shoes Inshole</p>
+              </div>
+            </a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+              <div class="flex flex-1">
+                <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
+                <p>Shoes Inshole</p>
+              </div>
+            </a>
           </div>
         </div>
       
