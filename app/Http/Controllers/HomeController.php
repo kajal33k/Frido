@@ -13,7 +13,7 @@ class HomeController extends Controller
 
     public function combos()
     {
-        return view('frontend.comobs');
+        return view('frontend.collections.comobs');
     }
 
     public function bestSellers()
@@ -22,7 +22,12 @@ class HomeController extends Controller
     }
 
     public function newLaunches()
-{
-    return view('frontend.collections.new-launches');
-}
+    {
+        return view('frontend.collections.new-launches');
+    }
+
+    public function inshole()
+    {
+        return view('frontend.inshole');
+    }
 }
