@@ -7,20 +7,24 @@
     
     {{-- Cards --}}
     <div class="py-16 bg-gray-100 text-center">
-        <!-- Main Heading -->
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
-          Say Goodbye to Pain, <br>Say Hello to Comfort
-        </h2>
-        
-      
-        <!-- Shop Options -->
-        <div class="flex justify-center gap-8">
-          <!-- Shop by Pain -->
-            <button class="text-xl font-semibold text-gray-800 mb-4 bg-amber-400 p-4 rounded-lg border border-black">Shop by Pain</button>
-          <!-- Shop by Activity -->
-            <button class="text-xl font-semibold text-gray-800 mb-4 border border-black p-4 rounded-lg">Shop by Activity</button>
-        </div>
+      <!-- Main Heading -->
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+        Say Goodbye to Pain, <br class="hidden sm:inline">Say Hello to Comfort
+      </h2>
+    
+      <!-- Shop Options -->
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
+        <!-- Shop by Pain -->
+        <button class="text-lg sm:text-xl font-semibold text-gray-800 bg-amber-400 p-3 sm:p-4 rounded-lg border border-black transition-transform transform hover:scale-105">
+          Shop by Pain
+        </button>
+        <!-- Shop by Activity -->
+        <button class="text-lg sm:text-xl font-semibold text-gray-800 border border-black p-3 sm:p-4 rounded-lg transition-transform transform hover:scale-105">
+          Shop by Activity
+        </button>
+      </div>
     </div>
+    
 
     {{-- grid cards --}}
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:mx-24 mx-8 md:pb-24">
@@ -61,29 +65,30 @@
       </div>
     </div>
     {{-- post text --}}
-    <div class="bg-yellow-400 py-16 mx-24 mb-6 sm:px-6 lg:px-8 text-center">
+    <div class="bg-yellow-400 py-16 px-4 sm:px-6 lg:px-8 text-center mx-auto max-w-7xl mb-6">
       <!-- Title -->
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
         Not sure where to start?
       </h2>
-      
+    
       <!-- Subtitle -->
-      <p class="text-lg text-gray-600 mb-8">
+      <p class="text-base sm:text-lg text-gray-600 mb-8">
         Take the quiz below to find which products are right for you.
       </p>
     
       <!-- Quiz Button (Call to Action) -->
-      <a href="/quiz" class="inline-block bg-black text-white text-lg py-3 px-8 rounded-lg shadow-md hover:bg-black-700 transition duration-300">
+      <a href="/quiz" class="inline-block bg-black text-white text-sm sm:text-lg py-3 px-6 sm:px-8 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
         Take the Quiz
       </a>
     </div>
+    
     
    
     {{-- slider --}}
 
 <div class="relative w-full">
 <!-- Swiper container -->
-<div class="swiper-container mx-12 overflow-hidden">
+<div class="swiper-container lg:mx-12 mx-4 overflow-hidden">
   <!-- Wrapper for slides -->
   <div class="swiper-wrapper">
     <!-- Slide 1 -->
@@ -484,7 +489,7 @@
 
 <script>
 const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,  // Show 3 slides at once
+  slidesPerView: 1,  // Show 3 slides at once
   spaceBetween: 20,  // Space between slides
   loop: true,        // Infinite looping
   navigation: {

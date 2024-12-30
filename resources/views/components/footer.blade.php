@@ -81,9 +81,7 @@
       <!-- Bottom Section -->
       <div class="text-center mt-10 text-sm border-t border-gray-700 pt-4">
         <p>© 2024 MYFRIDO. ALL RIGHTS RESERVED.</p>
-        <div class="mt-4">
-          <img src="https://via.placeholder.com/200x40?text=Visa+RuPay+MasterCard+Razorpay" alt="Payment Methods" class="mx-auto">
-        </div>
+        
       </div>
     </div>
   </footer>
