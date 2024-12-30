@@ -30,4 +30,29 @@ class HomeController extends Controller
     {
         return view('frontend.inshole');
     }
+
+    public function about()
+    {
+        return view('frontend.pages.about');
+    }
+
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+
+    public function faqs()
+    {
+        return view('pages.faqs');
+    }
+
+    public function terms()
+    {
+        return view('pages.terms');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('pages.privacy-policy');
+    }
 }
