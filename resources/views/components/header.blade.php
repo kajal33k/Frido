@@ -30,14 +30,46 @@
   
       <!-- Desktop Links -->
       <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="text-gray-600 hover:text-gray-800">Categories</a>
+        <!-- Categories Dropdown -->
+        <div class="relative group">
+          <a href="#" class="text-gray-600 hover:text-gray-800">Categories</a>
+          <div class="absolute hidden group-hover:block mt-2 w-48 bg-white shadow-md rounded-lg">
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+            <div>
+              <img src="" alt="">
+              <p></p>
+            </div>
+            </a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Category 2</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Category 3</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Category 4</a>
+          </div>
+        </div>
+      
+        <!-- Combos -->
         <a href="{{ route('combos') }}" class="text-gray-600 hover:text-gray-800">Combos</a>
+      
+        <!-- Best Seller -->
         <a href="#" class="text-gray-600 hover:text-gray-800">Best Seller</a>
+      
+        <!-- New Launches -->
         <a href="#" class="text-gray-600 hover:text-gray-800">New Launches</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">More</a>
+      
+        <!-- More Dropdown -->
+        <div class="relative group">
+          <a href="#" class="text-gray-600 hover:text-gray-800">More</a>
+          <div class="absolute hidden group-hover:block mt-2 w-48 bg-white shadow-md rounded-lg">
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 1</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 2</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 3</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 4</a>
+          </div>
+        </div>
+      
+        <!-- Contact Us -->
         <a href="#" class="text-gray-600 hover:text-gray-800">Contact us</a>
       </div>
-  
+      
       <!-- Search Bar -->
       {{-- <div class="hidden md:block flex-1 mx-6">
         <input
@@ -72,29 +104,90 @@
     </div>
   
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
-      <div class="px-4 pt-4 pb-2 space-y-2">
-        <a href="#" class="block text-gray-600 hover:text-gray-800">Categories</a>
-        <a href="{{ route('combos') }}" class="block text-gray-600 hover:text-gray-800">combos</a>
-        <a href="#" class="block text-gray-600 hover:text-gray-800">Best Seller</a>
-        <a href="#" class="block text-gray-600 hover:text-gray-800">New Launches</a>
-        <a href="#" class="block text-gray-600 hover:text-gray-800">more</a>
-        <a href="#" class="block text-gray-600 hover:text-gray-800">Contact us</a>
-        {{-- <input
-          type="text"
-          placeholder="Search products..."
-          class="w-full px-4 py-2 mt-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-        /> --}}
-        <div class="flex items-center space-x-4 mt-2">
-          <a href="/cart" class="text-gray-600 hover:text-gray-800">
-            <i class="ri-handbag-line"></i>
-          </a>
-          <a href="/profile" class="text-gray-600 hover:text-gray-800">
-            <i class="ri-user-3-fill"></i>
-          </a>
-        </div>
-      </div>
+   <!-- Mobile Menu Trigger Button -->
+{{-- <button 
+id="menu-toggle" 
+class="md:hidden block text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
+>
+<i class="ri-menu-line text-2xl"></i>
+</button> --}}
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+<div class="px-4 pt-4 pb-2 space-y-2">
+  <!-- Categories Dropdown -->
+  <div class="relative">
+    <button 
+      class="w-full text-left text-gray-600 hover:text-gray-800 flex justify-between items-center" 
+      onclick="toggleDropdown('categories-dropdown')"
+    >
+      Categories
+      <i class="ri-arrow-down-s-line"></i>
+    </button>
+    <div id="categories-dropdown" class="hidden pl-4 space-y-1">
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Category 1</a>
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Category 2</a>
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Category 3</a>
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Category 4</a>
     </div>
+  </div>
+
+  <!-- Combos -->
+  <a href="{{ route('combos') }}" class="block text-gray-600 hover:text-gray-800">Combos</a>
+
+  <!-- Best Seller -->
+  <a href="#" class="block text-gray-600 hover:text-gray-800">Best Seller</a>
+
+  <!-- New Launches -->
+  <a href="#" class="block text-gray-600 hover:text-gray-800">New Launches</a>
+
+  <!-- More Dropdown -->
+  <div class="relative">
+    <button 
+      class="w-full text-left text-gray-600 hover:text-gray-800 flex justify-between items-center" 
+      onclick="toggleDropdown('more-dropdown')"
+    >
+      More
+      <i class="ri-arrow-down-s-line"></i>
+    </button>
+    <div id="more-dropdown" class="hidden pl-4 space-y-1">
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Option 1</a>
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Option 2</a>
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Option 3</a>
+      <a href="#" class="block text-gray-600 hover:text-gray-800">Option 4</a>
+    </div>
+  </div>
+
+  <!-- Contact Us -->
+  <a href="#" class="block text-gray-600 hover:text-gray-800">Contact us</a>
+
+  <!-- Cart and Profile -->
+  <div class="flex items-center space-x-4 mt-4">
+    <a href="/cart" class="text-gray-600 hover:text-gray-800">
+      <i class="ri-handbag-line"></i>
+    </a>
+    <a href="/profile" class="text-gray-600 hover:text-gray-800">
+      <i class="ri-user-3-fill"></i>
+    </a>
+  </div>
+</div>
+</div>
+
+<!-- JavaScript for Dropdown and Mobile Menu -->
+<script>
+// Toggle Mobile Menu Visibility
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+});
+
+// Toggle Dropdown Visibility
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(id);
+  dropdown.classList.toggle('hidden');
+}
+</script>
+
   </nav>
   
 
