@@ -31,7 +31,7 @@
       <!-- Desktop Links -->
       <div class="hidden md:flex items-center space-x-6">
         <a href="#" class="text-gray-600 hover:text-gray-800">Categories</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Combos</a>
+        <a href="{{ route('combos') }}" class="text-gray-600 hover:text-gray-800">Combos</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">Best Seller</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">New Launches</a>
         <a href="#" class="text-gray-600 hover:text-gray-800">More</a>
@@ -75,7 +75,7 @@
     <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
       <div class="px-4 pt-4 pb-2 space-y-2">
         <a href="#" class="block text-gray-600 hover:text-gray-800">Categories</a>
-        <a href="#" class="block text-gray-600 hover:text-gray-800">combos</a>
+        <a href="{{ route('combos') }}" class="block text-gray-600 hover:text-gray-800">combos</a>
         <a href="#" class="block text-gray-600 hover:text-gray-800">Best Seller</a>
         <a href="#" class="block text-gray-600 hover:text-gray-800">New Launches</a>
         <a href="#" class="block text-gray-600 hover:text-gray-800">more</a>
