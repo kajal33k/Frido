@@ -40,22 +40,34 @@
               <p>Shoes Inshole</p>
             </div>
             </a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+            <a href="{{route('pages.cusion')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
               <div class="flex flex-1">
                 <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
-                <p>Shoes Inshole</p>
+                <p>Ergo cusion</p>
               </div>
             </a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+            <a href="{{route('pages.cusion')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
               <div class="flex flex-1">
                 <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
-                <p>Shoes Inshole</p>
+                <p>Ergo Pillow</p>
               </div>
             </a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+            <a href="{{route('products.product')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
               <div class="flex flex-1">
                 <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
-                <p>Shoes Inshole</p>
+                <p>Matress Toper</p>
+              </div>
+            </a>
+            <a href="{{route('products.product')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+              <div class="flex flex-1">
+                <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
+                <p>Matress Toper</p>
+              </div>
+            </a>
+            <a href="{{route('products.product')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">
+              <div class="flex flex-1">
+                <img src="{{asset('assets/image/category1.jpeg')}}" alt="" class="h-10 w-10">
+                <p>Matress Toper</p>
               </div>
             </a>
           </div>

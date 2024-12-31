@@ -55,4 +55,18 @@ class HomeController extends Controller
     {
         return view('pages.privacy-policy');
     }
+
+    public function cusion()
+    {
+        return view('frontend.pages.cusion');
+    }
+    public function pillow()
+    {
+        return view('frontend.pages.pillow');
+
+    }
+    public function product()
+    {
+        return view('frontend.products.product');
+    }
 }
