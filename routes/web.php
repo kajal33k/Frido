@@ -27,6 +27,15 @@ Route::prefix('pages')->group(function () {
     Route::get('/terms', [HomeController::class, 'terms'])->name('pages.terms');
     Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
 
+
     // New blogdetails route
     Route::get('/blogdetails', [HomeController::class, 'blogdetails'])->name('pages.blogdetails');
+
+    Route::get('/cusion', [HomeController::class, 'cusion'])->name('pages.cusion');
+    Route::get('/pillow', [HomeController::class, 'pillow'])->name('pages.pillow');
+
+});
+
+Route::prefix('products')->group(function () {
+    Route::get('/product', [HomeController::class, 'product'])->name('products.product');
 });
