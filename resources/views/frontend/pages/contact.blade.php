@@ -2,11 +2,15 @@
 
 @section('content')
     <div class="min-h-screen flex flex-col">
-        <!-- Hero Section -->
-        <div class="bg-gradient-to-r from-yellow-300 to-yellow-400 pt-40">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-start mb-10">
-                <p class="mt-4 text-xl text-black">Have Queries? Talk to Real People</p>
-                <h1 class="text-5xl sm:text-6xl md:text-7xl font-semibold text-black">Contact Us</h1>
+
+        <div class="bg-gradient-to-r from-yellow-300 to-yellow-400">
+        
+            <!-- Hero Section -->
+            <div class="pt-40">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-start mb-10">
+                    <p class="mt-4 text-xl text-black">Have Queries? Talk to Real People</p>
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-semibold text-black">Contact Us</h1>
+                </div>
             </div>
 
             <!-- Contact Options Section -->
@@ -158,5 +162,6 @@
                 </div>
             </div>
         </div>
+
     </div>
-@endsection
+@endsection 

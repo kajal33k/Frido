@@ -18,6 +18,7 @@ Route::prefix('collections')->group(function () {
 
 
 Route::prefix('pages')->group(function () {
+    
     Route::get('/about', [HomeController::class, 'about'])->name('pages.about');
     Route::get('/contact', [HomeController::class, 'contact'])->name('pages.contact');
     Route::get('/blogs', [HomeController::class, 'blogs'])->name('pages.blogs');
@@ -26,15 +27,16 @@ Route::prefix('pages')->group(function () {
     Route::get('/faqs', [HomeController::class, 'faqs'])->name('pages.faqs');
     Route::get('/terms', [HomeController::class, 'terms'])->name('pages.terms');
     Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
+    Route::get('/return-refund-cancellation-policy', [HomeController::class, 'returnRefundCancellationPolicy'])->name('pages.return_refund_cancellation_policy');
 
-
-    // New blogdetails route
+    // Blog and Details
     Route::get('/blogdetails', [HomeController::class, 'blogdetails'])->name('pages.blogdetails');
 
+    // Product Pages
     Route::get('/cusion', [HomeController::class, 'cusion'])->name('pages.cusion');
     Route::get('/pillow', [HomeController::class, 'pillow'])->name('pages.pillow');
-
 });
+
 
 Route::prefix('products')->group(function () {
     Route::get('/product', [HomeController::class, 'product'])->name('products.product');

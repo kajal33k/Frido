@@ -68,22 +68,27 @@ class HomeController extends Controller
     }
     public function terms()
     {
-        return view('pages.terms');
+        return view('frontend.pages.terms');
     }
- 
+
     public function privacyPolicy()
     {
-        return view('pages.privacy-policy');
+        return view('frontend.pages.privacy-policy');
+    }
+
+    public function returnRefundCancellationPolicy()
+    {
+        return view('frontend.pages.return_refund_cancellation_policy');
     }
 
     public function cusion()
     {
         return view('frontend.pages.cusion');
     }
+
     public function pillow()
     {
         return view('frontend.pages.pillow');
-
     }
     public function product()
     {
