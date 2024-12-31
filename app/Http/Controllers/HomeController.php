@@ -38,19 +38,39 @@ class HomeController extends Controller
 
     public function contact()
     {
-        return view('pages.contact');
+        return view('frontend.pages.contact');
+    }
+
+    public function storeLocator()
+    {
+
+        return view('frontend.pages.store-locator');
+    }
+
+    public function becomeARetailer()
+    {
+        return view('frontend.pages.become_a_retailer');
     }
 
     public function faqs()
     {
-        return view('pages.faqs');
+        return view('frontend.pages.faqs');
     }
 
+    public function blogs()
+    {
+        return view('frontend.pages.blogs');
+    }
+
+    public function blogdetails()
+    {
+        return view('frontend.pages.blogdetails');
+    }
     public function terms()
     {
         return view('pages.terms');
     }
-
+ 
     public function privacyPolicy()
     {
         return view('pages.privacy-policy');

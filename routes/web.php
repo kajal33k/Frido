@@ -20,7 +20,13 @@ Route::prefix('collections')->group(function () {
 Route::prefix('pages')->group(function () {
     Route::get('/about', [HomeController::class, 'about'])->name('pages.about');
     Route::get('/contact', [HomeController::class, 'contact'])->name('pages.contact');
+    Route::get('/blogs', [HomeController::class, 'blogs'])->name('pages.blogs');
+    Route::get('/store-locator', [HomeController::class, 'storeLocator'])->name('pages.store-locator');
+    Route::get('/become-a-retailer', [HomeController::class, 'becomeARetailer'])->name('pages.become_a_retailer');
     Route::get('/faqs', [HomeController::class, 'faqs'])->name('pages.faqs');
     Route::get('/terms', [HomeController::class, 'terms'])->name('pages.terms');
     Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
+
+    // New blogdetails route
+    Route::get('/blogdetails', [HomeController::class, 'blogdetails'])->name('pages.blogdetails');
 });
