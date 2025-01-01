@@ -86,7 +86,7 @@
         <div class="relative group">
           <a href="#" class="text-gray-600 hover:text-gray-800">More</a>
           <div class="absolute hidden group-hover:block mt-2 w-48 bg-white shadow-md rounded-lg">
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 1</a>
+            <a href="{{route('pages.compare')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Compare</a>
             <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 2</a>
             <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 3</a>
             <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Option 4</a>

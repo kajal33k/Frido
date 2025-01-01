@@ -70,7 +70,13 @@ class HomeController extends Controller
     {
         return view('pages.terms');
     }
+    public function compare(){
+        return view('frontend.pages.compare');
+    }
  
+    public function trackorder(){
+        return view('frontend.pages.trackorder');
+    }
     public function privacyPolicy()
     {
         return view('pages.privacy-policy');

@@ -21,7 +21,7 @@
         <h3 class="text-lg font-semibold mb-4">Corporate</h3>
         <ul class="space-y-2">
           <li><a href="#" class="hover:text-yellow-500 transition">Corporate Gifting</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Track Your Order</a></li>
+          <li><a href="{{route('pages.trackorder')}}" class="hover:text-yellow-500 transition">Track Your Order</a></li>
           <li><a href="#" class="hover:text-yellow-500 transition">Return, Refund & Cancellation Policy</a></li>
         </ul>
       </div>
