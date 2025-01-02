@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/cart', [HomeController::class, 'cart'])->name('cart');
 
 Route::get('/inshole', [HomeController::class, 'inshole'])->name('inshole');
 
@@ -26,6 +27,8 @@ Route::prefix('pages')->group(function () {
     Route::get('/become-a-retailer', [HomeController::class, 'becomeARetailer'])->name('pages.become_a_retailer');
     Route::get('/faqs', [HomeController::class, 'faqs'])->name('pages.faqs');
     Route::get('/terms', [HomeController::class, 'terms'])->name('pages.terms');
+    Route::get('/compare', [HomeController::class, 'compare'])->name('pages.compare');
+    Route::get('/trackorder', [HomeController::class, 'trackorder'])->name('pages.trackorder');
     Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('pages.privacy-policy');
     Route::get('/return-refund-cancellation-policy', [HomeController::class, 'returnRefundCancellationPolicy'])->name('pages.return_refund_cancellation_policy');
 

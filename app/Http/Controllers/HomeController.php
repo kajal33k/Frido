@@ -10,6 +10,9 @@ class HomeController extends Controller
     {
         return view('frontend.index');
     }
+    public function cart(){
+        return view('components.cart');
+    }
 
     public function combos()
     {
@@ -70,7 +73,13 @@ class HomeController extends Controller
     {
         return view('frontend.pages.terms');
     }
+    public function compare(){
+        return view('frontend.pages.compare');
+    }
 
+    public function trackorder(){
+        return view('frontend.pages.trackorder');
+    }
     public function privacyPolicy()
     {
         return view('frontend.pages.privacy-policy');

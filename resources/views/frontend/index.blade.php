@@ -556,4 +556,27 @@
             },
         });
     </script>
+  <style>
+    /* Custom styles for the Swiper navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 24px; /* Adjust the size of the arrows */
+        color: black; /* Change the color to black */
+        transition: color 0.3s ease; /* Optional: Smooth transition on hover */
+    }
+
+    /* Optional: Hover effect to change the color on hover */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: #0000; /* You can adjust this color as needed */
+    }
+
+    /* Optional: Adjust button size if needed */
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 1px;
+        height: 1px;
+    }
+</style>
+ 
 @endsection
