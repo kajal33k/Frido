@@ -21,7 +21,7 @@
           </template>
         </div>
   
-        <!-- Carousel Controls -->
+        <!-- Carousel Controls --> 
         <button @click="currentSlide = (currentSlide - 1 + slides.length) % slides.length" class="absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition">
           <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
