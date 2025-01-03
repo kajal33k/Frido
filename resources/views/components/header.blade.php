@@ -160,23 +160,7 @@
         <!-- New Launches -->
         <a href="{{ route('collections.new-launches') }}" class="text-gray-600 hover:text-gray-800">New Launches</a>
       
-        <!-- More Dropdown -->
-        {{-- <div class="relative group">
-          <a href="#" class="text-gray-600 hover:text-gray-800">More</a>
-          <div class="absolute hidden group-hover:block mt-2 w-48 bg-white shadow-md rounded-lg">
-            <a href="{{route('pages.compare')}}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Compare</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Compare Insole</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">About Us</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Blogs</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Became a Retailer</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Coporate Gifting</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Store Locator</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Affilate Program</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Campus Ambassador</a>
-            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800">Quiz</a>
-          </div>
-        </div>
-       --}}
+     
        <!-- More Dropdown -->
 <div class="relative">
   <button 
@@ -206,22 +190,14 @@
         <a href="#" class="text-gray-600 hover:text-gray-800">Contact us</a>
       </div>
       
-      <!-- Search Bar -->
-      {{-- <div class="hidden md:block flex-1 mx-6">
-        <input
-          type="text"
-          placeholder="Search products..."
-          class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-        />
-      </div> --}}
-  
+   
       <!-- Icons -->
       <div class="hidden md:flex items-center space-x-4">
       
         
           <!-- Link to show the input field -->
           <a href="#inputField" 
-             class="text-gray-600 pt-4 hover:text-gray-800 cursor-pointer inline-flex items-center space-x-2 mb-4">
+             class="text-gray-600 pt-4 hover:text-gray-800 cursor-pointer inline-flex items-center space-x-0 mb-4">
             <i class="ri-search-line"></i>
            
           </a>
@@ -274,106 +250,103 @@
       
         
 
-        <a href="#" class="text-gray-600 hover:text-gray-800" id="open-modal">
+        {{-- <a href="#" class="text-gray-600 hover:text-gray-800" id="open-modal">
           <i class="ri-handbag-line" id="cart-trigger"></i>
-        </a>
-        
-        <!-- Cart Popup -->
-        <div id="cart-popup" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div class="w-full max-w-lg bg-white rounded-lg shadow-lg overflow-hidden">
-            <!-- Header -->
-            <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
-              <h2 class="text-lg font-semibold text-gray-800">Your Cart</h2>
-              <button id="cart-close" class="text-gray-500 hover:text-gray-800">
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-        
-            <!-- Cart Items -->
-            <div class="p-6 space-y-4">
-              <!-- Single Item -->
-              <div class="flex items-center">
-                <img src="https://via.placeholder.com/80" alt="Product" class="w-16 h-16 rounded-lg object-cover">
-                <div class="ml-4 flex-1">
-                  <h3 class="text-gray-800 font-medium">Product Name</h3>
-                  <p class="text-sm text-gray-500">Size: M</p>
-                  <p class="mt-1 text-gray-600 font-semibold">$50.00</p>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <button class="px-2 py-1 text-gray-600 bg-gray-200 rounded hover:bg-gray-300">-</button>
-                  <span class="text-gray-800">1</span>
-                  <button class="px-2 py-1 text-gray-600 bg-gray-200 rounded hover:bg-gray-300">+</button>
-                </div>
-              </div>
-        
-              <!-- Example of another product -->
-              {{-- <div class="max-w-xs mx-auto flex flex-col bg-white rounded-lg shadow-md overflow-hidden">
-                <!-- Product Image -->
-                <div class="p-4 flex justify-center">
-                  <img src="https://via.placeholder.com/150" alt="Product" class="w-32 h-32 object-cover rounded-lg">
-                </div>
-        
-                <!-- Product Details -->
-                <div class="p-4">
-                  <h3 class="text-lg font-semibold text-gray-800">Frido Ultimate Cozy Pillow</h3>
-                  <p class="text-sm text-gray-500">Frido Ultimate Cozy Pillow</p>
-        
-                  <!-- Price Section -->
-                  <div class="flex items-center space-x-2 mt-3">
-                    <span class="text-xl font-bold text-gray-800">₹799.00</span>
-                    <span class="text-sm text-gray-500 line-through">₹1,999.00</span>
-                  </div>
-        
-                  <!-- Add to Cart Button -->
-                  <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
-                    Add to Cart
-                  </button>
-                </div>
-              </div> --}}
-              <div class="flex items-center">
-                <img src="https://via.placeholder.com/80" alt="Product" class="w-16 h-16 rounded-lg object-cover">
-                <div class="ml-4 flex-1">
-                  <h3 class="text-gray-800 font-medium">Product Name</h3>
-                  <p class="text-sm text-gray-500">Size: M</p>
-                  <p class="mt-1 text-gray-600 font-semibold">$50.00</p>
-                </div>
-                <div class="flex items-center space-x-2">
-                 <button class="bg-yellow-500 p-4 rounded-lg">ADD</button>
-                </div>
-              </div>
-        
-              <!-- Subtotal Section -->
-              <div class="pt-4 border-t border-gray-200">
-                <div class="flex justify-between">
-                  <p class="text-gray-500">Subtotal</p>
-                  <p class="text-gray-800 font-semibold">$50.00</p>
-                </div>
-                <div class="flex justify-between">
-                  <p class="text-gray-500">Shipping</p>
-                  <p class="text-gray-800 font-semibold">$5.00</p>
-                </div>
-                <div class="flex justify-between mt-4">
-                  <p class="text-lg font-medium">Total</p>
-                  <p class="text-lg font-semibold">$55.00</p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Checkout Button -->
-            <div class="p-6 border-t border-gray-200">
-              <button  id="openDiscountModal" class="w-full bg-yellow-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-700">
-                Proceed to Checkout
-              </button>
-            </div>
-          </div>
-        </div>
+        </a> --}}
+       <!-- Cart Icon -->
+<a href="#" class="text-gray-600 hover:text-gray-800" id="open-cart">
+  <i class="ri-handbag-line" id="cart-trigger"></i>
+</a>
 
+<!-- Sliding Cart Popup -->
+<div
+  id="cart-popup"
+  class="hidden fixed inset-y-0 right-0 z-50 w-80 bg-white shadow-lg transform translate-x-full transition-transform duration-300"
+>
+  <!-- Header -->
+  <div class="p-4 border-b border-gray-200 flex justify-between items-center">
+    <h2 class="text-lg font-semibold text-gray-800">Your Cart</h2>
+    <button id="close-cart" class="text-gray-500 hover:text-gray-800">
+      <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Cart Items -->
+  <div class="p-4 space-y-4 overflow-y-auto h-[calc(100vh-350px)]">
+    <!-- Example Item -->
+    <div class="flex items-center">
+      <img src="https://via.placeholder.com/80" alt="Product" class="w-16 h-16 rounded-lg object-cover">
+      <div class="ml-4 flex-1">
+        <h3 class="text-gray-800 font-medium">Product Name</h3>
+        <p class="text-sm text-gray-500">Size: M</p>
+        <p class="mt-1 text-gray-600 font-semibold">$50.00</p>
+      </div>
+      <div class="flex items-center space-x-2">
+        <button class="px-2 py-1 text-gray-600 bg-gray-200 rounded hover:bg-gray-300">-</button>
+        <span class="text-gray-800">1</span>
+        <button class="px-2 py-1 text-gray-600 bg-gray-200 rounded hover:bg-gray-300">+</button>
+      </div>
+    </div>
+    <!-- Add more items as needed -->
+  </div>
+
+  <!-- Checkout Section -->
+  <div class="p-4 border-t border-gray-200">
+    <div class="flex justify-between mb-2">
+      <span class="text-gray-600">Subtotal</span>
+      <span class="font-semibold">$50.00</span>
+    </div>
+    <div class="flex justify-between mb-2">
+      <span class="text-gray-600">Shipping</span>
+      <span class="font-semibold">$5.00</span>
+    </div>
+    <div class="flex justify-between text-lg font-medium">
+      <span>Total</span>
+      <span>$55.00</span>
+    </div>
+    <button
+    id="proceedToCheckout"
+    class="mt-4 w-full bg-yellow-600 text-white py-2 rounded-lg hover:bg-yellow-700 transition"
+  >
+    Proceed to Checkout
+  </button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const openCartBtn = document.getElementById("open-cart");
+  const closeCartBtn = document.getElementById("close-cart");
+  const cartPopup = document.getElementById("cart-popup");
+
+  // Open cart
+  openCartBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    cartPopup.classList.remove("hidden");
+    cartPopup.classList.remove("translate-x-full");
+  });
+
+  // Close cart
+  closeCartBtn.addEventListener("click", () => {
+    cartPopup.classList.add("translate-x-full");
+    setTimeout(() => {
+      cartPopup.classList.add("hidden");
+    }, 300); // Match the transition duration
+  });
+</script>
 
 <!-- Modal -->
-<div id="discountModal" class=" w-full fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center">
-  <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6" id="modalContent">
+<div id="discountModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex justify-center items-center">
+  <div class="relative bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+    <!-- Close Icon -->
+    <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
     <h2 class="text-2xl font-semibold mb-4">Unlock Superior Discounts</h2>
 
     <label for="mobileNumber" class="block text-lg mb-2">Enter Mobile Number</label>
@@ -401,9 +374,6 @@
     </div>
 
     <div class="flex justify-between items-center">
-      {{-- <button id="closeModalBtn" class=" text-black py-2 px-4 top-0 rounded-lg hover:bg-gray-600 transition">
-        <i class="ri-close-line"></i>
-      </button> --}}
       <button id="submitBtn" class="bg-yellow-600 text-white py-2 px-4 rounded-lg hover:bg-yellow-700 transition">
         Submit
       </button>
@@ -417,18 +387,18 @@
 
 <script>
   // Get modal and buttons
-  const openDiscountModalBtn = document.getElementById("openDiscountModal");
   const discountModal = document.getElementById("discountModal");
   const closeModalBtn = document.getElementById("closeModalBtn");
   const submitBtn = document.getElementById("submitBtn");
   const whatsappLoginBtn = document.getElementById("whatsappLoginBtn");
+  const proceedToCheckoutBtn = document.getElementById("proceedToCheckout");
 
-  // Open the modal
-  openDiscountModalBtn.addEventListener("click", () => {
+  // Open the modal when "Proceed to Checkout" is clicked
+  proceedToCheckoutBtn.addEventListener("click", () => {
     discountModal.classList.remove("hidden");
   });
 
-  // Close the modal
+  // Close the modal when close icon is clicked
   closeModalBtn.addEventListener("click", () => {
     discountModal.classList.add("hidden");
   });
@@ -457,8 +427,9 @@
   whatsappLoginBtn.addEventListener("click", () => {
     alert("Login with WhatsApp feature coming soon!");
   });
-</script>        
-        <script>
+</script>
+
+<script>
           // Open modal
           document.getElementById('cart-trigger').addEventListener('click', function() {
             document.getElementById('cart-popup').classList.remove('hidden');
@@ -475,13 +446,13 @@
               document.getElementById('cart-popup').classList.add('hidden');
             }
           });
-        </script>
+</script>
         
      
-        <a href="#" class="text-gray-600 hover:text-gray-800">
-            <i class="ri-user-3-fill"></i>
-        </a>
-      </div>
+<a href="#" class="text-gray-600 hover:text-gray-800">
+<i class="ri-user-3-fill"></i>
+</a>
+</div>
   
       <!-- Mobile Menu Button -->
       <button
@@ -493,15 +464,7 @@
         </svg>
       </button>
     </div>
-  
-    <!-- Mobile Menu -->
-   <!-- Mobile Menu Trigger Button -->
-{{-- <button 
-id="menu-toggle" 
-class="md:hidden block text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
->
-<i class="ri-menu-line text-2xl"></i>
-</button> --}}
+
 
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
@@ -562,9 +525,10 @@ class="md:hidden block text-gray-600 hover:text-gray-800 focus:outline-none focu
 
   <!-- Cart and Profile -->
   <div class="flex items-center space-x-4 mt-4">
-    <a href="/cart" class="text-gray-600 hover:text-gray-800">
-      <i class="ri-handbag-line"></i>
+    <a href="#" class="text-gray-600 hover:text-gray-800" id="open-cart">
+      <i class="ri-handbag-line" id="cart-trigger"></i>
     </a>
+    
     <a href="/profile" class="text-gray-600 hover:text-gray-800">
       <i class="ri-user-3-fill"></i>
     </a>
