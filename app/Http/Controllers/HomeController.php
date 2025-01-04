@@ -10,7 +10,8 @@ class HomeController extends Controller
     {
         return view('frontend.index');
     }
-    public function cart(){
+    public function cart()
+    {
         return view('components.cart');
     }
 
@@ -73,11 +74,13 @@ class HomeController extends Controller
     {
         return view('frontend.pages.terms');
     }
-    public function compare(){
+    public function compare()
+    {
         return view('frontend.pages.compare');
     }
 
-    public function trackorder(){
+    public function trackorder()
+    {
         return view('frontend.pages.trackorder');
     }
     public function privacyPolicy()
@@ -102,5 +105,31 @@ class HomeController extends Controller
     public function product()
     {
         return view('frontend.products.product');
+    }
+
+
+    public function profile()
+    {
+        return view('frontend.account.profile');
+    }
+
+    public function orders()
+    {
+        return view('frontend.account.orders');
+    }
+
+    public function recentview()
+    {
+        return view('frontend.account.recentview');
+    }
+
+    public function settings()
+    {
+        return view('frontend.account.settings');
+    }
+
+    public function addresses()
+    {
+        return view('frontend.account.addresses');
     }
 }
