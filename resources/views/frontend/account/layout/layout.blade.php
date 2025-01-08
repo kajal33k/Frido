@@ -71,9 +71,9 @@
                         class="absolute -bottom-1 -right-1 w-4 h-4 md:w-5 md:h-5 bg-green-400 rounded-full border-2 border-white">
                     </div>
                 </div>
-                <p class="text-gray-700 text-sm flex items-center">
+                <p id="current-time" class="text-gray-700 text-sm flex items-center">
                     <span class="material-icons text-sm mr-1">schedule</span>
-                    10:21:55 AM
+                    <!-- The current time will be inserted here -->
                 </p>
             </div>
 
@@ -131,4 +131,36 @@
         </div>
 
     </div>
+
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+
+            // Format time in HH:MM:SS AM/PM
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+
+            hours = hours % 12;
+            hours = hours ? hours : 12; // Hour 0 should be 12
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            const timeString = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+
+            // Update the text content of the element
+            document.getElementById('current-time').innerHTML = `
+            <span class="material-icons text-sm mr-1">schedule</span>
+            ${timeString}
+        `;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+
+        // Set initial time
+        updateTime();
+    </script>
 @endsection
