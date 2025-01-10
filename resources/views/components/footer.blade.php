@@ -7,11 +7,11 @@
       <div>
         <h3 class="text-lg font-semibold mb-4">Categories</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-yellow-500 transition">Pillows</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Cushions</a></li>
+          <li><a href="{{ route('pages.pillow') }}" class="hover:text-yellow-500 transition">Pillows</a></li>
+          <li><a href="{{ route('pages.cusion') }}" class="hover:text-yellow-500 transition">Cushions</a></li>
           <li><a href="#" class="hover:text-yellow-500 transition">Retail Shops Near You</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Best Seller</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Compare Insoles</a></li>
+          <li><a href="{{ route('collections.best-sellers') }}" class="hover:text-yellow-500 transition">Best Seller</a></li>
+          <li><a href="{{ route('inshole') }}" class="hover:text-yellow-500 transition">Compare Insoles</a></li>
           <li><a href="#" class="hover:text-yellow-500 transition">Take a Quiz</a></li>
         </ul>
       </div>
@@ -20,9 +20,9 @@
       <div>
         <h3 class="text-lg font-semibold mb-4">Corporate</h3>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-yellow-500 transition">Corporate Gifting</a></li>
+          <li><a href="" class="hover:text-yellow-500 transition">Corporate Gifting</a></li>
           <li><a href="{{route('pages.trackorder')}}" class="hover:text-yellow-500 transition">Track Your Order</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Return, Refund & Cancellation Policy</a></li>
+          <li><a href="{{ route('pages.return_refund_cancellation_policy') }}" class="hover:text-yellow-500 transition">Return, Refund & Cancellation Policy</a></li>
         </ul>
       </div>
 
@@ -31,8 +31,8 @@
         <h3 class="text-lg font-semibold mb-4">Policies</h3>
         <ul class="space-y-2">
           <li><a href="#" class="hover:text-yellow-500 transition">In the Press</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Privacy & Cookie Policy</a></li>
-          <li><a href="#" class="hover:text-yellow-500 transition">Terms and Conditions</a></li>
+          <li><a href="{{ route('pages.privacy-policy') }}" class="hover:text-yellow-500 transition">Privacy & Cookie Policy</a></li>
+          <li><a href="{{ route('pages.terms') }}" class="hover:text-yellow-500 transition">Terms and Conditions</a></li>
         </ul>
       </div>
 

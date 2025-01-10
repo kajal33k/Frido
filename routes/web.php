@@ -44,3 +44,12 @@ Route::prefix('pages')->group(function () {
 Route::prefix('products')->group(function () {
     Route::get('/product', [HomeController::class, 'product'])->name('products.product');
 });
+
+
+Route::prefix('account')->group(function () {
+    Route::get('/profile', [HomeController::class, 'profile'])->name('account.profile');
+    Route::get('/orders', [HomeController::class, 'orders'])->name('account.orders');
+    Route::get('/settings', [HomeController::class, 'settings'])->name('account.settings');
+    Route::get('/recentview', [HomeController::class, 'recentview'])->name('account.recentview');
+    Route::get('/addresses', [HomeController::class, 'addresses'])->name('account.addresses');
+});
